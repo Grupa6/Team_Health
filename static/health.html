@@ -44,11 +44,19 @@
 		$(document).ready(function () {
 			$("#teamButton").click(function () {
 				$("#teamMembersBlock").removeClass('hidden')
+				var timovi=$('#timForm input[name=fav_os]:checked').val();
+				console.log(timovi);
 			});
 			$("#teamButton2").click(function () {
 				$("#teamMembersBlock2").removeClass('hidden')
 			});
+		
+
 		});
+
+		
+			
+	 
 
 	</script>
 
@@ -73,9 +81,9 @@
 			</div>
 		</div>
 
-
+		<form id="timForm"  action="#">
 		<div class="row" style="margin: 0 auto; width: 80%">
-			<div class="col-md-6 rows" id="teamNameBlock">
+			<div class="col-md-6 rows " id="teamNameBlock">
 				<div class="text-center block-center">
 					<h2>Изберете име на тим:</h2>
 					<div class="checkbox">
@@ -102,7 +110,7 @@
 					<button type="button" id="teamButton" class="btn btn-success" id="shower">Продолжете</button>
 				</div>
 			</div>
-
+		</form>
 
 			<div class="col-md-6 rows">
 				<div class="text-center block-center hidden" id="teamMembersBlock">
@@ -140,7 +148,7 @@
 		<br>
 		<br>
 
-		<div class="col-md-12 rows">
+		<div class="col-md-12 rows ">
 			<!--<div class="row" style="margin: 0 auto; width: 80%; text-align:center">-->
 			<div class="text-center block-center hidden" id="teamMembersBlock2">
 			
