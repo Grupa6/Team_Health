@@ -13,7 +13,8 @@ var connection = mysql.createConnection({
  connection.connect();
 
 app.get('/', function (req, res) {
-  res.send('Hello World')
+  res.render('health');
+ 
 })
 
 app.get('/goodbye', function(req, res){
@@ -21,6 +22,9 @@ app.get('/goodbye', function(req, res){
 })
 
  app.get('/test_mysql_connection', function(req,res){
+  
+
+  
    connection.query('select ime from `anketa`.Clenovi where ID=4', function (error, results, fields) {
      if (error){
        res.statusCode = 500;
@@ -30,4 +34,6 @@ app.get('/goodbye', function(req, res){
    });
  })
  
+
+
 app.listen(8081)
