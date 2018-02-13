@@ -21,7 +21,7 @@ app.get('/goodbye', function(req, res){
 })
 
  app.get('/test_mysql_connection', function(req,res){
-   connection.query('SELECT 1 + 1 AS solution', function (error, results, fields) {
+   connection.query('SELECT ime from `anketa'.Clenovi, function (error, results, fields) {
      if (error){
        res.statusCode = 500;
        res.send(error);
