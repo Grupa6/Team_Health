@@ -5,7 +5,7 @@ var app = express()
 console.log('hello')
 //app.set('view engine', 'html');
 
-app.use(express.static('./'))
+app.use(express.static('static'))
 
 
 var connection = mysql.createConnection({
@@ -39,4 +39,4 @@ app.get('/goodbye', function(req, res){
    });
  })
  
- //app.listen(8080)
+ app.listen(8080)
