@@ -2,8 +2,10 @@ var express = require('express')
  var mysql = require('mysql');
 
 var app = express()
+console.log('hello')
+//app.set('view engine', 'html');
 
-app.set('view engine', 'html');
+app.use(express.static('./'))
 
 
 var connection = mysql.createConnection({
@@ -16,7 +18,7 @@ var connection = mysql.createConnection({
  connection.connect();
 
 app.get('/', function (req, res) {
-  res.render('health.html');
+  res.render('health');
  
 })
 
@@ -37,6 +39,4 @@ app.get('/goodbye', function(req, res){
    });
  })
  
-
-
-app.listen(8081)
+ //app.listen(8080)
