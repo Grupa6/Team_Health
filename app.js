@@ -3,6 +3,9 @@ var express = require('express')
 
 var app = express()
 
+app.set('view engine', 'html');
+
+
 var connection = mysql.createConnection({
    host: 'anketa.cpftu5bvza76.us-east-1.rds.amazonaws.com',
    user: 'root',
