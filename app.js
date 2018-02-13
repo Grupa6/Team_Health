@@ -16,7 +16,7 @@ var connection = mysql.createConnection({
  connection.connect();
 
 app.get('/', function (req, res) {
-  res.render('health');
+  res.render('health.html');
  
 })
 
