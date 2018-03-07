@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+ <meta charset="utf-8">
+	<title>Team Health Check Application</title>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	<style type="text/css">
+		.rows {
+			font-size: 20px;
+			font-family: georgia;
+		}
+
+		.rows .checkbox label input {
+			margin-right: 10px;
+		}
+
+		.rows .checkbox label {
+			color: #2F9599;
+		}
+
+		.rows h2 {
+			font-weight: bold;
+			color: #547980;
+		}
+
+		.rows h3 {
+			font-weight: bold;
+			color: #2F9599;
+			text-align: center
+		}
+
+		.rows .button {
+			margin-top: 10px;
+		}
+	</style>
+
+
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$("#teamButton").click(function () {
+				$("#teamMembersBlock").removeClass('hidden')
+			});
+			$("#teamButton2").click(function () {
+				$("#teamMembersBlock2").removeClass('hidden')
+			});
+		});
+
+	</script>
+
+</head>
+
+<body>
+
+	<body style="background-color:#E5FCC2">
+
+
+
+
+
+		<div class="row" style="width: 80%; margin: 0 auto; margin-bottom: 35px;">
+			<div class="col-md-12">
+				<p style="color:#594F4F; text-align:center; font-size:50px; margin-top: 25px; font-family: georgia">
+					<b>Team Health Check Application</b>
+				</p>
+				<p style="color:#45ADA8; text-align:center; font-size:20px; margin-top: -15px; font-family: georgia">
+					<b>Тим 6</b>
+				</p>
+			</div>
+		</div>
+
+
+		<div class="row" style="margin: 0 auto; width: 80%">
+			<div class="col-md-6 rows" id="teamNameBlock">
+				<div class="text-center block-center">
+					<h2>Изберете име на тим:</h2>
+					<div class="checkbox">
+						<label>
+							<input type="radio" name="fav_os" value="1">Тим 1</input>
+						</label>
+					</div>
+					<div class="checkbox">
+						<label>
+							<input type="radio" name="fav_os" value="2">Тим 2</input>
+						</label>
+					</div>
+					<div class="checkbox">
+						<label>
+							<input type="radio" name="fav_os" value="3">Тим 3</input>
+						</label>
+					</div>
+					<div class="checkbox">
+						<label>
+							<input type="radio" name="fav_os" value="4">Тим 4</input>
+						</label>
+					</div>
+
+					<button type="button" id="teamButton" class="btn btn-success" id="shower">Продолжете</button>
+				</div>
+			</div>
+
+
+			<div class="col-md-6 rows">
+				<div class="text-center block-center hidden" id="teamMembersBlock">
+					<h2>Изберете член од тимот:</h2>
+					<div class="checkbox">
+						<label>
+							<input type="radio" name="fav_os2" value="1">Член 1</input>
+						</label>
+					</div>
+					<div class="checkbox">
+						<label>
+							<input type="radio" name="fav_os2" value="2">Член 2</input>
+						</label>
+					</div>
+					<div class="checkbox">
+						<label>
+							<input type="radio" name="fav_os2" value="3">Член 3</input>
+						</label>
+					</div>
+					<div class="checkbox">
+						<label>
+							<input type="radio" name="fav_os2" value="4">Член 4</input>
+						</label>
+					</div>
+
+					<button type="button" id="teamButton2" class="btn btn-success" id="shower">Продолжете</button>
+				</div>
+			</div>
+		</div>
+
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+
+		<div class="col-md-12 rows">
+			<!--<div class="row" style="margin: 0 auto; width: 80%; text-align:center">-->
+			<div class="text-center block-center hidden" id="teamMembersBlock2">
+			
+				<h2>Прашања:</h2>
+				
+				<h3>Дали како индивидуа добивате доволно помош од тимот?</h3>
+				<form>
+					<label class="radio-inline">
+						<input type="radio" name="optradiop1" value="1">1
+					</label>
+					<label class="radio-inline">
+						<input type="radio" name="optradiop1" value="2">2
+					</label>
+					<label class="radio-inline">
+						<input type="radio" name="optradiop1" value="3">3
+					</label>
+					<label class="radio-inline">
+						<input type="radio" name="optradiop1" value="4">4
+					</label>
+					<label class="radio-inline">
+						<input type="radio" name="optradiop1" value="5">5
+					</label>
+				</form>
+
+				<h3>Дали си задоволен со работата на тимот (teamwork)?</h3>
+				<form>
+					<label class="radio-inline">
+						<input type="radio" name="optradiop2" value="1">1
+					</label>
+					<label class="radio-inline">
+						<input type="radio" name="optradiop2" value="2">2
+					</label>
+					<label class="radio-inline">
+						<input type="radio" name="optradiop2" value="3">3
+					</label>
+					<label class="radio-inline">
+						<input type="radio" name="optradiop2" value="4">4
+					</label>
+					<label class="radio-inline">
+						<input type="radio" name="optradiop2" value="5">5
+					</label>
+				</form>
+
+				<h3>Дали тимот го чувствуваш како група на пиунчиња или тим на играчи?</h3>
+				<form>
+					<label class="radio-inline">
+						<input type="radio" name="optradiop2" value="1">1
+					</label>
+					<label class="radio-inline">
+						<input type="radio" name="optradiop2" value="2">2
+					</label>
+					<label class="radio-inline">
+						<input type="radio" name="optradiop2" value="3">3
+					</label>
+					<label class="radio-inline">
+						<input type="radio" name="optradiop2" value="4">4
+					</label>
+					<label class="radio-inline">
+						<input type="radio" name="optradiop2" value="5">5
+					</label>
+				</form>
+
+				<h3>Дали ја разбираш мисијата на тимот?</h3>
+				<form>
+					<label class="radio-inline">
+						<input type="radio" name="optradiop2" value="1">1
+					</label>
+					<label class="radio-inline">
+						<input type="radio" name="optradiop2" value="2">2
+					</label>
+					<label class="radio-inline">
+						<input type="radio" name="optradiop2" value="3">3
+					</label>
+					<label class="radio-inline">
+						<input type="radio" name="optradiop2" value="4">4
+					</label>
+					<label class="radio-inline">
+						<input type="radio" name="optradiop2" value="5">5
+					</label>
+				</form>
+
+				<h3>Дали е добар квалитетот на кодот?</h3>
+				<form>
+					<label class="radio-inline">
+						<input type="radio" name="optradiop2" value="1">1
+					</label>
+					<label class="radio-inline">
+						<input type="radio" name="optradiop2" value="2">2
+					</label>
+					<label class="radio-inline">
+						<input type="radio" name="optradiop2" value="3">3
+					</label>
+					<label class="radio-inline">
+						<input type="radio" name="optradiop2" value="4">4
+					</label>
+					<label class="radio-inline">
+						<input type="radio" name="optradiop2" value="5">5
+					</label>
+				</form>
+				<br>
+				<br>
+
+
+				<button type="button" class="btn btn-success">Крај на тестот</button>
+
+				<br>
+				<br>
+
+			</div>
+			</div>
+		</div>
+
+
+	</body>
+
+</html>
